@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtawal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-12dp"
+        android:layout_marginTop="56dp"
+        android:layout_toEndOf="@+id/btnjumlah"
+        android:text="Masukkan Angka Pertama"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editawal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="87dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="155dp"
+        android:text="Masukkan Angka kedua" />
+
+    <EditText
+        android:id="@+id/editkedua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editawal"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="196dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtoperator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edithasil"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="67dp"
+        android:text="pilih operator" />
+
+    <Button
+        android:id="@+id/btnjumlah"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="185dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/btnkurang"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtawal"
+        android:layout_alignTop="@+id/btnjumlah"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="1dp"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btnkali"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnjumlah"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="104dp"
+        android:text="x" />
+
+    <Button
+        android:id="@+id/btnbagi"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnjumlah"
+        android:layout_marginStart="-101dp"
+        android:layout_toEndOf="@+id/btnkali"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/txthasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnkurang"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-191dp"
+        android:layout_marginBottom="138dp"
+        android:text="Hasil"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/edithasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="95dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+</RelativeLayout>
